@@ -1,8 +1,21 @@
-#include <iostream>
+#include <raylib.h>
 
 using namespace std;
 
 int main()
 {
-	cout << "Hello, World!" << endl;
+	InitWindow(800, 450, "Platformer");
+
+	SetTargetFPS(60);
+
+	while (!WindowShouldClose())
+	{
+		BeginDrawing();
+		ClearBackground(RAYWHITE);
+		EndDrawing();
+	}
+
+	CloseWindow();
+
+	return 0;
 }
